@@ -1,7 +1,8 @@
 export default function multiplicaArray (array) {
-    for (let i = 0; i < array.lenght; i++) {
+    let multiplicacao = 1;
+
+    for (let i = 0; i < array.length; i++) {
         multiplicacao *= array[i];
     }
-    
     return multiplicacao;
 }

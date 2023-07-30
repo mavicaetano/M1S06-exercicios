@@ -1,11 +1,7 @@
+import somaArray from "./somaArray.js";
+
 export default function calculaMedia (array) {
-    if (array.lenght === 0) {
-        return 0;
-    }
+    let soma = somaArray(array);
 
-    for (let i = 0; i < array.lenght; i++) {
-        soma += array[i];
-    }
-
-    return media = soma / array.lenght;
+    return soma / array.length;
 }
