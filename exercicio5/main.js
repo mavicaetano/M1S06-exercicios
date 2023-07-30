@@ -6,3 +6,16 @@ os números ímpares.
 No módulo principal, importe as duas funções e solicite ao usuário que insira um array de números.
 Utilize a função filtrarPares para obter um novo array contendo apenas os números pares do array fornecido pelo usuário.
 Em seguida, utilize a função somaImpares para calcular e exibir no console a soma dos números ímpares do array fornecido pelo usuário. */
+
+import filtrarPares from "./filtrarPares.js";
+import somaImpares from "./somarImpares.js";
+
+let array = [];
+
+for (let i = 0; i < 5; i++) {
+    let numero = Number(prompt("Digite um número: "));
+    array.push(numero);
+}
+
+console.log("Os números pares são: ", filtrarPares(array));
+console.log("A soma dos números ímpares é: ", somaImpares(array));
